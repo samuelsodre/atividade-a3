@@ -6,7 +6,7 @@ public class GerenciadorDePedidos {
         double desconto = estrategiaDesconto.calcular(pedido);
         double valorFinal = pedido.getValorTotalBruto() - desconto;
 
-        // Garante que o valor final não seja negativo por erro de cálculo
+
         return Math.max(0.0, valorFinal);
     }
 }
